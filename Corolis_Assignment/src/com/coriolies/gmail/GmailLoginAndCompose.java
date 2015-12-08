@@ -25,14 +25,14 @@ driver.manage().window().maximize();
 }
 public  void login(WebDriver driver)
 {
-	driver.findElement(By.id("Email")).sendKeys("pathik09@gmail.com");
+	driver.findElement(By.id("Email")).sendKeys("pathikassignment@gmail.com");
 	driver.findElement(By.id("next")).click();
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement element = wait.until(
 	    ExpectedConditions.visibilityOfElementLocated(By.id("Passwd")));
 
 	// Enter Password
-	driver.findElement(By.name("Passwd")).sendKeys("PATHIK@09");
+	driver.findElement(By.name("Passwd")).sendKeys("CORIOLIS@09");
 
 	// Click on 'Sign In' button
 	driver.findElement(By.id("signIn")).click();//.clickk on Compose Mail.
@@ -40,9 +40,9 @@ public  void login(WebDriver driver)
 }
 public void composeEmail(WebDriver driver)
 {
-	driver.findElement(By.xpath("//*[@accesskey='c']")).click();
-	driver.findElement(By.name("body")).sendKeys("NAME:PATHIK SUTARIA");
-	driver.findElement(By.name("body")).sendKeys("CONTACT NO:09833579056");
+	driver.findElement(By.xpath("//*[@accesskey='c']")).click();  
+	driver.findElement(By.name("body")).sendKeys("NAME:PATHIK SUTARIA\n  ");
+	driver.findElement(By.name("body")).sendKeys("CONTACT NO:09833579056\n   ");
 //https://github.com/pathik09/CoriolisAssignment
 	driver.findElement(By.name("body")).sendKeys("GIT HUB URL : https://github.com/pathik09/CoriolisAssignment");
 	
