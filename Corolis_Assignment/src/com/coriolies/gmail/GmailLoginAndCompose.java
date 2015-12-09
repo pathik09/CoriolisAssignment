@@ -45,6 +45,10 @@ public void composeEmail(WebDriver driver)
 	driver.findElement(By.name("body")).sendKeys("CONTACT NO:09833579056\n   ");
 //https://github.com/pathik09/CoriolisAssignment
 	driver.findElement(By.name("body")).sendKeys("GIT HUB URL : https://github.com/pathik09/CoriolisAssignment");
+	driver.findElement(By.name("to")).sendKeys("shrikant.katkojwar@coriolis.co.in; ");
+	driver.findElement(By.name("to")).sendKeys("hiring@coriolis.co.in");
+	//driver.findElement(By.name("subject")).sendKeys("	coriolis assignment");
+	driver.findElement(By.name("nvp_bu_send")).click();
 	
 }
 }
